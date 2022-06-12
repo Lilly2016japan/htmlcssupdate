@@ -396,65 +396,69 @@ sub{
 	background-color: #F5F5F5;
 }
 
-@media(max-width:380px){	
+@media(max-width:380px){
+	
 	.wrap{
 		padding: 20px;
 	}
   
-  .bg_home{
+	.bg_home{
 		display: none;
-  }
+	}
 
-  .bg_home_sm{
+	.bg_home_sm{
 		display: block;
 		position: absolute;
 		top: 390px;
 		right: 20px;
 		z-index: -1;
 		max-width: 100%;
-  }
+	}
   
-  .header{
+	.header{
 		position: fixed;
 		top: 0px;
 		right: 0px;
 		left: 0;
-		height: 72px;
 		border-bottom: 2px solid #FFD153;
 		padding: 24px 20px;
 		background-color: white;
 		margin-bottom: 32px;
 	}
+
+	.logo a{
+		width: 120px;
+	}
   
-  .banner img{
+	.banner img{
 		max-width: 304.32px;
 		height: 305.5px;
 		margin-bottom: 98.5px;
-  }
+	}
   
-  .plat-type li{
+	.plat-type li{
 		width: 90%;
-  }
+	}
   
-  .customerization h2{
+	.customerization h2{
 		font-size: 28px;
-  }
+	}
   
-  .customerization p{
+	.customerization p{
 		width: 100%;
-  }
+	}
   
-  .character li{
+	.character li{
 		width: 90%;
-  }
+	}
   
-  .key-points .points li{
+	.key-points .points li{
 		width: 90%;
-  }
+	}
   
-  .eval-detail li{
+	.eval-detail li{
 		width: 90%;
 		margin-bottom: 94px;
-  }
+	}
   
 }
