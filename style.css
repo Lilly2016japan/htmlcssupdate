@@ -1,0 +1,460 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+＊,*::before,*::after{
+	box-sizing: border-box;
+}
+
+/* 設定Base */
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+	line-height: 1.5;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+sub{
+	vertical-align: sub;
+}
+
+/* 設計大小剪掉兩邊邊距+兩邊間隔寬度：1366-139-139+16＋16=1120 */
+.container{
+	max-width: 1120px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.wrap{
+	max-width: 1366px;
+	margin: 0 auto;
+	padding: 0 139px;
+}
+
+.bg_home{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	max-width: 100%;
+}
+
+.bg_home_sm{
+	display: none;
+}
+
+.header{
+	padding: 24px 0px;
+	display: flex;
+	justify-content: space-between;
+	height: 88px;
+	text-align: center;
+}
+
+.logo a{
+	height: 40px;
+	width: 218px;
+	padding: 24px 0;
+}
+
+.nav a{
+	color: white;
+	background-color: #FF5D50;
+	display: inline-block;
+	border-radius: 22px;
+	padding: 8px 32px;
+	width: 128px;
+}
+
+.nav a:hover{
+	color: #FF5D50;
+	background-color: white;
+	border: 1px solid #FF5D50;
+}
+
+.banner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 217px;
+}
+
+.banner-txt{
+	width: 50%;
+}
+
+.banner-txt h1{
+	font-size: 18px;
+	color: #56C4C5;
+	padding-top: 158px;
+}
+
+.banner-txt h2{
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.banner-txt h3{
+	font-size: 20px;
+	padding-bottom: 157px;
+}
+
+.banner img{
+	max-width: 532px;
+	height: 534px;
+}
+
+.platform h2{
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+.plat-type{
+	display: flex;
+	margin-bottom: 100px;
+	justify-content: space-between;
+}
+
+.plat-type li{
+	width: 26%;
+	text-align: center;
+}
+
+.plat-type img{
+	width: 90px;
+	height: 90px;
+	margin-bottom: 24px;
+}
+
+.plat-type h3{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 24px;
+}
+
+.plat-type p{
+	color: #747474;  
+}
+
+.customization{
+	text-align: center;
+}
+
+.customization h2{
+	font-size: 32px;
+	font-weight: bold;
+	padding-bottom: 16px;  
+}
+
+.customization h3{
+	font-size: 20px;
+}
+
+.character{
+	display: flex;
+	justify-content: space-between;
+	padding: 48px 0 100px;
+}
+
+.character li{
+	width: 24%;
+	border-radius: 12px;
+	box-shadow: 0px 2px 10px #00000014;
+	background-color: white;
+}
+
+.character img{
+	max-width: unset;
+	border-radius: 12px 12px 0px 0px;
+}
+
+.ch-txt{
+	padding: 16px 16px 24px;  
+}
+
+.ch-txt h4{
+	color: #56C4C5;
+	font-weight: bold;
+	padding-bottom: 16px;
+}
+
+.strength{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.points ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.points li{
+	width: 30%;
+	border-radius: 12px;
+	border: none;
+	box-shadow: 0px 2px 10px #00000014;
+	padding: 32px 32px 48px;
+	margin-right: 47px;
+	margin-bottom: 28px;
+}
+
+.rad-img{
+	width: 86px;
+	height: 86px;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0px 2px 10px #00000014;
+	margin-bottom: 24px;
+}
+
+.points img{
+	width: 52px;
+	height: 52px;
+	margin: 17px;
+}
+
+.points h4{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 16px;
+} 
+
+.key-points{
+	width: 55%;
+	margin-left: 90px;
+}
+
+.key-points h3{
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+.key-points p{
+	font-size: 18px;
+	margin-bottom: 24px;
+}
+
+.key-points a{
+	color: white;
+	background-color: #56C4C5;
+	display: inline-block;
+	border-radius: 27px;
+	padding: 12px 32px;
+	width: 20%;
+	text-align: center;
+}
+
+.key-points a:hover{
+	color: #56C4C5;
+	background-color: white;
+	border: 1px solid #56C4C5;
+}
+
+.evaluation h3{
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 104px;
+}
+
+.eval-detail{
+	display: flex;
+	margin-bottom: 134px;
+}
+
+.eval-detail li{
+	position: relative;
+	padding: 48px 32px 24px;
+	border-radius: 12px;
+	border: none;
+	box-shadow: 0px 2px 10px #00000014;
+	background-color: white;
+	margin-right: 16px;
+}
+
+.eval-detail>li>img {
+	position: absolute;
+	top: -60px;
+	left: 32px;
+	width: 80px;
+	height: 80px;
+	border: none;
+	border-radius: 50%;
+}
+
+.eval-detail p{
+    padding-bottom: 20px;
+    border-bottom: 2px solid #E5E4E2;
+    margin-bottom: 26px;
+}
+
+.eval-detail h4{
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.comment{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-plan{
+	height: 503px;
+	background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-plan h3{
+	font-size: 32px;
+	font-weight: bold;
+	padding-top: 300px;
+	margin-bottom: 48px;
+}
+
+.footer-plan a{
+	color: #FFFFFF;
+	background-color: #56C4C5;
+	display: inline-block;
+	border-radius: 27px;
+	padding: 12px 32px;
+	width: 136px;
+}
+
+.footer-plan a:hover{
+	color: #56C4C5;
+	background-color: white;
+	border: 1px solid #56C4C5;
+}
+
+.footer{
+	display: flex;
+	padding: 16px 0;
+	background-color: #F5F5F5;
+}
+
+@media(max-width:380px){	
+	.wrap{
+		padding: 20px;
+	}
+  
+  .bg_home{
+		display: none;
+  }
+
+  .bg_home_sm{
+		display: block;
+		position: absolute;
+		top: 390px;
+		right: 20px;
+		z-index: -1;
+		max-width: 100%;
+  }
+  
+  .header{
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		left: 0;
+		height: 72px;
+		border-bottom: 2px solid #FFD153;
+		padding: 24px 20px;
+		background-color: white;
+		margin-bottom: 32px;
+	}
+  
+  .banner img{
+		max-width: 304.32px;
+		height: 305.5px;
+		margin-bottom: 98.5px;
+  }
+  
+  .plat-type li{
+		width: 90%;
+  }
+  
+  .customerization h2{
+		font-size: 28px;
+  }
+  
+  .customerization p{
+		width: 100%;
+  }
+  
+  .character li{
+		width: 90%;
+  }
+  
+  .key-points .points li{
+		width: 90%;
+  }
+  
+  .eval-detail li{
+		width: 90%;
+		margin-bottom: 94px;
+  }
+  
+}
