@@ -498,10 +498,11 @@ sub{
 
 	.eval-detail{
 		flex-direction: column;
-		margin: 0px 20px 32px;
+		margin: 0px 20px 0px;
 	}
   
 	.eval-detail li{
 		width: 90%;
+		margin-bottom: 92px;
 	}
 }
