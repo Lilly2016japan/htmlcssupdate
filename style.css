@@ -396,10 +396,10 @@ sub{
 	background-color: #F5F5F5;
 }
 
-@media(max-width:380px){
+@media(max-width:375px){
 	
 	.wrap{
-		padding: 20px;
+		padding: 10px;
 	}
   
 	.bg_home{
@@ -409,37 +409,55 @@ sub{
 	.bg_home_sm{
 		display: block;
 		position: absolute;
-		top: 390px;
+		top: 450px;
 		right: 20px;
 		z-index: -1;
 		max-width: 100%;
 	}
   
 	.header{
-		position: fixed;
-		top: 0px;
-		right: 0px;
-		left: 0;
+		flex-direction: column;
 		border-bottom: 2px solid #FFD153;
-		padding: 24px 20px;
 		background-color: white;
 		margin-bottom: 32px;
+		padding-bottom: 48px;
 	}
 
-	.logo a{
-		width: 120px;
+	.banner{
+		flex-direction: column;
+		margin-bottom: 92px;
 	}
-  
+
+	.banner-txt{
+		width: 90%;
+	}
+
+	.banner-txt h1{
+		padding-top: 0px;
+	}
+
+	.banner-txt h2{
+		font-size: 32px;
+	}
+
+	.banner-txt h3{
+		padding-bottom: 0px;
+	}
+
 	.banner img{
 		max-width: 304.32px;
 		height: 305.5px;
-		margin-bottom: 98.5px;
 	}
-  
+
+	.plat-type{
+		flex-direction: column;		
+	}
+
 	.plat-type li{
 		width: 90%;
+		padding-bottom: 24px;
 	}
-  
+
 	.customerization h2{
 		font-size: 28px;
 	}
@@ -447,18 +465,43 @@ sub{
 	.customerization p{
 		width: 100%;
 	}
+
+	.character{
+		flex-direction: column;
+		align-items: center;
+	}
   
 	.character li{
 		width: 90%;
+		margin-bottom: 24px;
+	}
+
+	.strength{
+		flex-direction: column-reverse;
+		align-items: center;
 	}
   
-	.key-points .points li{
+	.key-points{
 		width: 90%;
+		text-align: left;
+		margin: 0px 20px 32px;
+	}
+
+	.key-points a{
+		width: 25%;
+	}
+
+	.points li{
+		width: 90%;
+		margin: 0px 52px 32px;
+	}
+
+	.eval-detail{
+		flex-direction: column;
+		margin: 0px 20px 32px;
 	}
   
 	.eval-detail li{
 		width: 90%;
-		margin-bottom: 94px;
 	}
-  
 }
